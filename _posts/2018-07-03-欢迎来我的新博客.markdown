@@ -18,5 +18,6 @@ tags:
 Lestat 的 Blog 就这么开通了
 准备今晚上把博客从hexo迁移到jekyll,感觉文章发布上jekyll比hexo更方便,而且主题也不错~
 
+[我的旧博客](https://lestatmiao.github.io/)
 
 —— Lestat 于 2018.07
