@@ -1,12 +1,14 @@
 ---
-title: apache2开启SSL
-date: 2017-09-08 10:16:27
+layout:     post
+title:      "apache2开启SSL"
+subtitle:   "配合certbot"
+date:       2018-07-03 17:29:00
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- apache
-- ssl
-categories:
-- 服务器
-top: 5
+    - apache
+    - ssl
 ---
 
 ## windows+apache2开启SSL以及80端口强制跳转SSL访问的方法

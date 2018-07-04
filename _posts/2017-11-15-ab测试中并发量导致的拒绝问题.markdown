@@ -1,12 +1,13 @@
 ---
-title: ab测试中并发量导致的拒绝问题
+layout:     post
+title:      "ab测试中并发量导致的拒绝问题"
+subtitle:   " 其实就是改下配置... "
+date:       2017-11-15 15:30:00
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 压力测试
-date: 2017-11-15 14:24:33
-permalink:
-categories:
-description:
-keywords:
+    - 压力测试
 ---
 
 今天对一个微信投票的小项目进行ab测试  

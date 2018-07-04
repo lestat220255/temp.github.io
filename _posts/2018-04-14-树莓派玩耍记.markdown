@@ -1,12 +1,14 @@
 ---
-title: 树莓派玩耍记
+layout:     post
+title:      "树莓派玩耍记"
+subtitle:   "安装,配置raspberry pi以及开发简单应用"
+date:       2018-04-14 21:52:41
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 树莓派
-date: 2018-04-14 21:52:41
-permalink:
-categories:
-description:
-keywords:
+    - 树莓派
+    - linux
 ---
 
 > 这篇文章是自己入手树莓派之后的一些使用记录  
