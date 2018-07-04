@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Vue开发中的一些总结"
-subtitle:   "关于axios请求中传递`ids[]`形式参数的方法"
+subtitle:   "关于axios请求中传递特定形式参数的方法"
 date:       2018-01-26 16:20:18
 author:     "Lestat"
 header-img: "img/post-bg-2015.jpg"
