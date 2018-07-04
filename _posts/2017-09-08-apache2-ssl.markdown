@@ -21,6 +21,7 @@ tags:
 
 ### 配置443端口
 再参考[官方文档](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)的一段内容:
+
 ```
 Listen 443
 <VirtualHost *:443>
@@ -31,17 +32,21 @@ Listen 443
     SSLCertificateKeyFile "路径/文件名.key"
 </VirtualHost>
 ```
+
 在apache的`vhosts.conf`中添加以上代码,重启apache
 
 ### 配置80端口跳转443
 这里直接上代码:
+
 ```conf
 <VirtualHost *:80>
     RewriteEngine on
     RewriteCond %{SERVER_PORT} !^443$
     RewriteRule ^/?(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
     ServerName 域名
-</VirtualHost>```
+</VirtualHost>
+```
+
 告诉apache将该域名下80端口的所有请求跳转到443,重启apache
 
 至此配置完成
@@ -51,6 +56,7 @@ Listen 443
 **后面在一个微信项目中发现以上做法的一个问题:**  
 安卓手机在使用微信内置浏览器`QQ浏览器X5内核提供技术支持`访问可能会出现页面空白的情况,而在PC端的调试工具和IOS以及其他浏览器上未发现该问题  
 解决方法:修改虚拟机配置如下:  
+
 ```
 Listen 443
 <VirtualHost *:443>
@@ -62,5 +68,6 @@ Listen 443
     SSLCertificateChainFile "路径/文件名.pem"
 </VirtualHost>
 ```  
+
 
 其实就是添加了一行`SSLCertificateChainFile`
