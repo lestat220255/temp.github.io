@@ -1,10 +1,10 @@
 # Site settings
-title: Lestat
-SEOTitle: Lestat Blog
+title: Lestat Blog
+SEOTitle: Lestat | Lestat Blog
 header-img: img/home-bg.jpg
 email: lestat@lestat.me
-description: "热爱后端开发,对运维感兴趣"
-keyword: "后端 | PHP | Linux | Docker | Vue | jenkins | scrapy | python"
+description: ""
+keyword: ""
 url: "https://blog.lestat.me"              # your host, for absolute URL
 baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -81,10 +81,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Friends
 friends: [
-    {
-        title: "我的旧博客",
-        href: "https://lestatmiao.github.io"
-    }
     # {
     #     title: "Hux Blog",
     #     href: "http://huangxuan.me"
