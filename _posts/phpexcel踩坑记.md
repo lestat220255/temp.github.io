@@ -1,0 +1,37 @@
+---
+title: phpexcel踩坑记
+tags:
+- php
+- excel
+- 扩展
+date: 2017-12-01 12:48:17
+permalink:
+categories:
+description:
+keywords:
+---
+
+最近在使用phpexcel扩展处理表格导入的时候,遇到两个坑,现做以下记录
+
+* 坑一:excel表中的富文本导入后数据始终不对
+> 解决方法:假设$temp为循环读取的每列数据值,判断是否是`PHPExcel_RichText`类的实例,如果是,则调用$temp自身的方法__toString()转换,代码如下:  
+```php
+if ($temp instanceof PHPExcel_RichText) $temp = $temp->__toString();
+```
+
+* 坑二:excel表中的日期导入后变成了`float`类型的值  
+> 解决方法:假设$temp为循环读取的每列数据值,假设日期所在列为`D`  
+代码如下(这里的if仅仅是用来判断日期是否为空,如果不判断,为空时会自动用当前时间填充,根据实际业务决定):  
+```php
+if($k=='D'){//指定D列为时间所在列
+    $date = $objPHPExcel->getActiveSheet()->getCell("$k$j")->getValue();
+    if($date){
+        $temp = date("Y-m-d", PHPExcel_Shared_Date::ExcelToPHP($date));
+    }else{
+        $temp = '';
+    }
+}else{
+    $temp = $objPHPExcel->getActiveSheet()->getCell("$k$j")->getValue();
+}
+```
+目前暂未发现其他坑
