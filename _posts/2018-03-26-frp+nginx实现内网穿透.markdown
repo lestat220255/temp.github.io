@@ -1,18 +1,18 @@
 ---
-title: frp+nginx实现内网穿透
-tags: 
-- nginx
-- frp
-date: 2018-03-26 20:58:23
-permalink:
-categories:
-description:
-keywords:
+layout:     post
+title:      "frp+nginx实现内网穿透"
+subtitle:   "\"从任意位置访问你的本地服务\""
+date:       2018-03-26 20:58:23
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - nginx
+    - frp
 ---
 
+
 > 写在前面:上一篇文章写了关于ngrok+nginx实现内网穿透的流程,并提出了一些存在的问题,昨天试过frp之后,将之前ngrok存在的无法映射本地域名的问题解决了  
-
-
 
 [frp](https://github.com/fatedier/frp) 是一个可用于内网穿透的高性能的反向代理应用，支持 tcp, udp, http, https 协议。  
 

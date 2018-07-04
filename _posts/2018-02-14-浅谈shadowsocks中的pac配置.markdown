@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "浅谈shadowsocks中的pac配置"
-subtitle:   "只为需要代理的请求做代理"
+subtitle:   "\"只为需要代理的请求做代理\""
 date:       2018-02-14 11:43:29
 author:     "Lestat"
 header-img: "img/post-bg-2015.jpg"

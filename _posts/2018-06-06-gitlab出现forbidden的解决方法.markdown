@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "gitlab出现forbidden的解决方法"
-subtitle:   "可能是配置问题"
+subtitle:   "\"可能是配置问题\""
 date:       2018-06-06 11:22:24
 author:     "Lestat"
 header-img: "img/post-bg-2015.jpg"
