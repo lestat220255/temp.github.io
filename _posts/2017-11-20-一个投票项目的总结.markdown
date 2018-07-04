@@ -1,15 +1,18 @@
 ---
-title: 一个投票项目的总结
+layout:     post
+title:      "一个投票项目的总结"
+subtitle:   "一点点关于并发请求优化的细节"
+date:       2017-11-20 13:57:24
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 并发
-- 缓存
-- 优化
-date: 2017-11-20 13:57:24
-permalink:
-categories:
-description:
-keywords:
+    - 优化
+    - 缓存
+    - 并发
 ---
+
+
 最近开发了一个只有3个页面的微信投票小项目  
 基本流程:一个微信号一天只能对一个参与者投一次票且一天总共可以对不同参与者投10次票  
 首页内容:展示所有投票参与者以及其得票数,按照编号排序(支持点击投票)  

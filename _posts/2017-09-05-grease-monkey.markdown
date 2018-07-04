@@ -1,13 +1,17 @@
 ---
-title: 油猴的简单使用
-date: 2017-09-05 14:50:04
+layout:     post
+title:      "油猴的简单使用"
+subtitle:   "挖掘chrome的潜力"
+date:       2017-09-05 14:50:04
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 插件
-- plugins
-categories:
-- 其他交流
-top: 10
+    - 插件
+    - plugins
 ---
+
+
 # 关于greasemonkey(油猴)的安装和一些实用脚本推荐
 
 ## 步骤

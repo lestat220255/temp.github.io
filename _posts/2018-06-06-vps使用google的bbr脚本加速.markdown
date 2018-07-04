@@ -1,14 +1,16 @@
 ---
-title: vps使用google的bbr脚本加速
-tags: 
-- google
-- vps
-date: 2018-06-06 11:36:38
-permalink:
-categories:
-description:
-keywords:
+layout:     post
+title:      "vps使用google的bbr脚本加速"
+subtitle:   "针对公司后台管理系统写的列表点击排序"
+date:       2018-06-06 11:36:38
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - google
+    - vps
 ---
+
 
 ### 问题
 从去年开始用vultr的vps,先是搭建了ssserver,然后各种web服务,以一个nginx为代理服务器,代理本地不同端口的各种服务,总体来说,vultr家的vps体验很好,除了一点:速度较慢,尤其是晚上8-11点(我买的是东京节点),之前在google上看了很久关于vps加速的方案,基本都是通过锐速,kcptun较多  
@@ -26,6 +28,7 @@ keywords:
 ```shell
 System Required:  CentOS 6+, Debian7+, Ubuntu12+
 ```
+
 我当前的vps是`Ubuntu 18.04 LTS`,因此满足开启`tcp_bbr`的条件  
 4. 赋予执行权限:`chmod +x ./bbr.sh`
 5. 执行:`./bbr.sh`

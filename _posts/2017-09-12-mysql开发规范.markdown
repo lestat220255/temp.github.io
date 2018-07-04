@@ -1,15 +1,15 @@
 ---
-title: mysql开发规范
+layout:     post
+title:      "mysql开发规范"
+subtitle:   "参考去哪儿网mysql规范"
+date:       2017-09-12 22:27:03
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 插件
-- plugins
-date: 2017-09-12 22:27:03
-permalink:
-categories:
-- mysql
-description:
-keywords:
+    - mysql
 ---
+
 
 ## 命名规范
 * 库名、表名、字段名必须使用小写字母，并采用下划线分割

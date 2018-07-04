@@ -1,15 +1,17 @@
 ---
-title: 同一页面巧妙使用多个element-ui的upload组件
-tags: 
-- vue
-- element-ui
-date: 2018-06-30 22:04:25
-permalink:
-categories:
-- 问题记录
-description:
-keywords:
+layout:     post
+title:      "同一页面巧妙使用多个element-ui的upload组件"
+subtitle:   "element-ui多组upload组件使用技巧"
+date:       2018-06-30 22:04:25
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - vue
+    - element-ui
+    - 工作记录
 ---
+
 
 ### 问题
 最近在使用SSR(服务器端渲染)方式引入`vue`+`element-ui`开发一个商城项目的时候遇到一个问题:因为商城的订单是可能包含多个商品,所以订单的评价涉及到同一个页面多组表单的异步提交(每一组表单包含评价内容和上传的多张图片)  

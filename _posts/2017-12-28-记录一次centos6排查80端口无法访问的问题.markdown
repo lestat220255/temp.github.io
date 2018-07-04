@@ -1,14 +1,16 @@
 ---
-title: 记录一次centos6排查80端口无法访问的问题
+layout:     post
+title:      "记录一次centos6排查80端口无法访问的问题"
+subtitle:   "结果是机房路由限制的..."
+date:       2017-12-28 15:49:02
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- centos6
-- 端口
-date: 2017-12-28 15:49:02
-permalink:
-categories:
-description:
-keywords:
+    - centos6
+    - 端口
 ---
+
 
 **大概是一个月前的事情了,最近工作繁忙,暂时忘了记录...**  
 

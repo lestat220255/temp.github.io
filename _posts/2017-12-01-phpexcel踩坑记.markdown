@@ -1,15 +1,17 @@
 ---
-title: phpexcel踩坑记
+layout:     post
+title:      "phpexcel踩坑记"
+subtitle:   "phpexcel部分需要注意的细节"
+date:       2017-12-01 12:48:17
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- php
-- excel
-- 扩展
-date: 2017-12-01 12:48:17
-permalink:
-categories:
-description:
-keywords:
+    - 扩展
+    - excel
+    - php
 ---
+
 
 最近在使用phpexcel扩展处理表格导入的时候,遇到两个坑,现做以下记录
 

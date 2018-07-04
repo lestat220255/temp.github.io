@@ -1,12 +1,17 @@
 ---
-title: ngrok+nginx实现内网穿透
-tags: []
-date: 2018-03-24 12:05:51
-permalink:
-categories:
-description:
-keywords:
+layout:     post
+title:      "ngrok+nginx实现内网穿透"
+subtitle:   "让外网访问你的本地服务"
+date:       2018-03-24 12:05:51
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - ngrok
+    - nginx
 ---
+
+
 > 写在前面:  
 前天在qq群里看到有人在讨论替代花生壳的工具，说到了ngrok，说是可以实现花生壳一样的内网穿透，个人认为主要有以下几个用处:
 1. 可以在公司测试服务器上搭建一个服务,实现测试站点的本地访问(公网访问本地服务器)，在这之前通常是上传网站到服务器并解析一个子域名，相对比较费时  

@@ -1,13 +1,16 @@
 ---
-title: tp3.2.3实现支持点击排序
+layout:     post
+title:      "tp3.2.3实现支持点击排序"
+subtitle:   "针对公司后台管理系统写的列表点击排序"
+date:       2017-09-14 10:28:05
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 工作记录
-date: 2017-09-14 10:28:05
-permalink:
-categories: 工作记录
-description:
-keywords:
+    - thinkphp
 ---
+
+
 > 假设:
 * `Admin/Home/Controller/BaseController.class.php`是一个基础控制器
 * `$current_params`和`$in`是两个在`Admin/Home/Controller/BaseController.class.php`中用来保存接收参数的属性,并且已经在构造函数中对其赋值

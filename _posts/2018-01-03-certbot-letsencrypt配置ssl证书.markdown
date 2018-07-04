@@ -1,13 +1,15 @@
 ---
-title: certbot+letsencrypt配置免费单证书多域名ssl证书
+layout:     post
+title:      "certbot+letsencrypt配置免费单证书多域名ssl证书"
+subtitle:   "可配合定时任务实现自动续期"
+date:       2018-01-03 16:44:05
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- ssl
-date: 2018-01-03 16:44:05
-permalink:
-categories:
-description:
-keywords:
+    - ssl
 ---
+
 **前些天看到微信公众平台官方公告[关于公众平台接口不再支持HTTP方式调用的公告](https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&announce_id=1505983913&version=&lang=zh_CN)之后决定把项目的协议从`http`改成`https`,于是开始在网上查,完成之后总结了一点经验**  
 
 > 本文演示的是通用证书,即在`certbot`命令中不需要指定`--apache`或者`--nginx`之类,只需要在完成证书生成之后在服务器配置文件里进行引用即可
@@ -24,24 +26,32 @@ $ sudo apt-get update
 $ sudo apt-get install certbot
 ```
 * 生成证书
+
 ```
 $ sudo certbot certonly
 ```
+
 此时会出现选项,按照提示选择即可  
 
 * 证书自动续期可以使用
+
 ```
 certbot renew --force-renew
 ```
+
 手动强制为证书续期  
 如果出现以下提示则说明更新成功
+
 ```
 Congratulations, all renewals succeeded. The following certs have been renewed:
 ```
+
 但为了更方便,通常使用`crontab -e`编辑定时任务,并加入
+
 ```
 0 0 1 * * certbot renew --force-renew “重启服务器命令”
 ```
+
 实现每个月1号0点自动续期
 
 ### 在服务器配置相关证书
@@ -51,7 +61,8 @@ Congratulations, all renewals succeeded. The following certs have been renewed:
 如果有多个域名  
 1. 可以用过在`Please enter in your domain name(s) (comma and/or space separated)  (Enter 'c'
 to cancel):`步骤通过`,`来分隔域名
-2. 可以使用以下命令来直接生成多个域名的证书
+2. 可以使用以下命令来直接生成多个域名的证书  
+
 ```
 $ sudo certbot certonly --webroot -w /var/www/example -d example.com -d www.example.com -w /var/www/thing -d thing.is -d m.thing.is
 ```

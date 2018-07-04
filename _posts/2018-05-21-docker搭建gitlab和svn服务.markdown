@@ -1,14 +1,15 @@
 ---
-title: docker搭建gitlab和svn服务
-tags: 
-- docker
-- gitlab
-- svn
-date: 2018-05-21 17:15:59
-permalink:
-categories:
-description:
-keywords:
+layout:     post
+title:      "docker搭建gitlab和svn服务"
+subtitle:   "实现免费的私有仓库"
+date:       2018-05-21 17:15:59
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - docker
+    - gitlab
+    - svn
 ---
 
 > 之前公司里的代码都是托管到局域网服务器上的,现在由于部分同事远程办公的需要,计划把git和svn都转到公网的centos服务器上去,但是gitlab的配置是真心费时间,所以决定用docker来做这个事情,以下是一些步骤和总结  
@@ -21,10 +22,12 @@ keywords:
 ```bash
 docker pull gitlab/gitlab-ce:latest
 ```
+
 2. 新建授权用户
 ```bash
 useradd -d /home/gitlab -s /bin/sh -m gitlab
 ```
+
 3. 后台运行容器,指定域名,端口映射关系,目录映射关系,将容器命名为gitlab,方便后续操作
 ```bash
 docker run --detach \
@@ -53,6 +56,7 @@ docker run --detach \
 ```bash
 docker run -d -p 9200:80 -p 9201:443 -v /home/subversion/svn:/var/local/svn -v /home/subversion/svn_backup:/var/svn-backup -v /home/subversion/svn_conf/:/etc/apache2/dav_svn/ --name svn marvambass/subversion
 ```
+
 2. 添加svn用户  
 ```bash
 htdigest /home/subversion/svn_conf/dav_svn.passwd Subversion username

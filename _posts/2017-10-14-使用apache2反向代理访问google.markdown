@@ -1,16 +1,15 @@
 ---
-title: 使用apache2反向代理访问google
+layout:     post
+title:      "使用apache2反向代理访问google"
+subtitle:   "实现不用科学上网也可以访问google"
+date:       2017-10-14 21:56:43
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 翻墙
-- 反向代理
-date: 2017-10-14 21:56:43
-permalink:
-categories:
-description:
-keywords:
-- 翻墙
-- 反向代理
+    - 反向代理
 ---
+
 
 > **引言**  
 刚刚在[v2ex](https://www.v2ex.com/t/397631#reply17)上看到一篇用nginx做反向代理访问google的帖子,出于好奇,试了试用apache进行反向代理访问google,果然很好玩!

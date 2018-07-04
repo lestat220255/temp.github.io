@@ -1,14 +1,16 @@
 ---
-title: gitlab出现forbidden的解决方法
-tags: 
-- docker
-- gitlab
-date: 2018-06-06 11:22:24
-permalink:
-categories:
-description:
-keywords:
+layout:     post
+title:      "gitlab出现forbidden的解决方法"
+subtitle:   "可能是配置问题"
+date:       2018-06-06 11:22:24
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - docker
+    - gitlab
 ---
+
 
 ### 问题
 前些天在公司的测试服务器上基于docker安装了gitlab,今天同事突然反映gitlab地址访问的时候页面提示`Forbidden`,http状态码也是对应的`403`,于是google一下,发现原因可能是较多的并发导致的访问被拒绝
@@ -29,6 +31,7 @@ gitlab_rails['rack_attack_git_basic_auth'] = {
   'bantime' => 3600
 }
 ```
+
 去掉注释,然后改为
 ```shell
 gitlab_rails['rack_attack_git_basic_auth'] = {
@@ -39,6 +42,7 @@ gitlab_rails['rack_attack_git_basic_auth'] = {
   'bantime' => 60
 }
 ```
+
 保存退出  
 
 运行`docker exec 容器名称 gitlab-ctl reconfigure`

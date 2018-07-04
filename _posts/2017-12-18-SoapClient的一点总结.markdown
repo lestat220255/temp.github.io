@@ -1,14 +1,16 @@
 ---
-title: SoapClient的一点总结
+layout:     post
+title:      "SoapClient的一点总结"
+subtitle:   "一些需要注意的细节配置"
+date:       2017-12-18 10:10:54
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- Soap
-- 接口
-date: 2017-12-18 10:10:54
-permalink:
-categories:
-description:
-keywords:
+    - Soap
+    - 接口
 ---
+
 
 **近期在开发一个小型的酒店订房系统**  
 

@@ -1,13 +1,15 @@
 ---
-title: 关于mysql查询语句的一次问题记录
+layout:     post
+title:      "关于mysql查询语句的一次问题记录"
+subtitle:   "关于一个子查询细节语法错误的解决方法"
+date:       2018-04-03 14:19:09
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- mysql
-date: 2018-04-03 14:19:09
-permalink:
-categories:
-description:
-keywords:
+    - mysql
 ---
+
 
 最近在开发一个公司内部使用的财务报表系统,在一次查询时数据库报了一个错误,在网上查看原因并解决问题之后顺便记录一下,该sql的目标是从日报主表,日报月数据表,日报模块表中查询到指定经营公司,指定日期的当日汇总数据(包含部分当月数据用于后续计算)
 

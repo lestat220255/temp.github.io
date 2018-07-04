@@ -1,13 +1,16 @@
 ---
-title: 一些常用正则表达式
+layout:     post
+title:      "一些常用正则表达式"
+subtitle:   "工作记录"
+date:       2017-10-14 20:44:26
+author:     "Lestat"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
 tags:
-- 笔记
-date: 2017-10-14 20:44:26
-permalink:
-categories:
-description:
-keywords:
+    - 工作记录
 ---
+
+
 **最近用phpspider抓取网页,除了用xpath匹配标签外,偶尔也会用到正则表达式,这里简单记录一下常用的正则如下:**  
 
 ```php
