@@ -1,7 +1,7 @@
 {
-  "name": "Hux Blog",
-  "short_name": "Hux Blog",
-  "description": "About an engineer & designer who loves web.",
+  "name": "Lestat's Blog",
+  "short_name": "Lestat's Blog",
+  "description": "About an developer who loves web",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
