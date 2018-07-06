@@ -17,7 +17,8 @@ tags:
 ## 准备工作:
 - apache服务器需要安装proxy相关模块,如果是ubuntu环境可以直接使用命令`sudo a2enmod 模块名称`进行安装,模块可以在`/etc/apache2/mods-available/`目录下查看,安装好的模块可以在`/etc/apache2/mods-enabled/`
 里查看  
-这里直接上本人的配置:
+这里直接上配置:
+
 ```
 <VirtualHost *:443>
     ServerName facebook.smarthippo.club
@@ -44,6 +45,7 @@ tags:
 	ProxyPassReverse / https://www.google.com.hk/
 </VirtualHost>
 ```  
+
 So,[Google](https://google.smarthippo.club),[Wiki](https://wiki.smarthippo.club),就是这么简单~
 
 > 备注:  
