@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "vps使用google的bbr脚本加速"
-subtitle:   "针对公司后台管理系统写的列表点击排序"
+subtitle:   "Youtube 1080P什么的都不是事儿"
 date:       2018-06-06 11:36:38
 author:     "Lestat"
 header-img: "img/post-bg-2015.jpg"

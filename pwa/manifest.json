@@ -1,14 +1,23 @@
 {
   "name": "Lestat's Blog",
   "short_name": "Lestat's Blog",
-  "description": "About an developer who loves web",
+  "description": "敲敲代码,写写日记",
   "icons": [{
+<<<<<<< HEAD
     "src": "icons/167.png",
     "sizes": "167x167",
     "type": "image/png"
   }, {
     "src": "icons/347.png",
     "sizes": "347x347",
+=======
+    "src": "icons/2.png",
+    "sizes": "174x174",
+    "type": "image/png"
+  }, {
+    "src": "icons/1.png",
+    "sizes": "554x554",
+>>>>>>> 0c9adebc4ea3f37c584fbfbcd31f3c873bee5b2b
     "type": "image/png"
   }],
   "background_color": "#fff",

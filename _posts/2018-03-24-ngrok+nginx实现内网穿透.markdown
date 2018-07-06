@@ -48,22 +48,27 @@ ngrok.com所在的服务器安装了ngrok的服务端（ngrokd）
 
 ### Go环境的安装
 1. 下载并解压GOLANG
+
 ```
 wget -c https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
 tar -C /usr/local -zxvf go1.8.3.linux-amd64.tar.gz
 ```
+
 2. 设置相关环境变量
+
 ```
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/go
 export GOROOT_BOOTSTRAP=/usr/local/go
 ```
+
 3. 检查安装是否成功  
 `go version`
 
 ### 安装ngrok
 1. 下载并配置参数
+
 ```
 cd /usr/local/
 git clone https://github.com/inconshreveable/ngrok.git
@@ -71,38 +76,45 @@ export GOPATH=/usr/local/ngrok/
 export NGROK_DOMAIN="ngrok.lestat.me"
 cd ngrok
 ```
+
 2. 生成证书  
+
 ```
 openssl genrsa -out rootCA.key 2048
 openssl req -x509 -new -nodes -key rootCA.key -subj "/CN=$NGROK_DOMAIN" -days 5000 -out rootCA.pem
 openssl genrsa -out server.key 2048
 openssl req -new -key server.key -subj "/CN=$NGROK_DOMAIN" -out server.csr
 openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 5000
-
 ```
 
 3. 将源码下的证书复制到指定位置  
+
 ```
 cp rootCA.pem assets/client/tls/ngrokroot.crt
 cp server.crt assets/server/tls/snakeoil.crt
 cp server.key assets/server/tls/snakeoil.key
 ```
+
 4. 编译服务器&客户端(linux64位),如果是32位系统则是`amd386`  
+
 ```
 cd /usr/local/go/src
 GOOS=linux GOARCH=amd64 ./make.bash
 cd /usr/local/ngrok/
 GOOS=linux GOARCH=amd64 make release-server release-client
 ```
+
 编译Mac64位客户端
+
 ```
 cd /usr/local/go/src
 GOOS=darwin GOARCH=amd64 ./make.bash
 cd /usr/local/ngrok/
 GOOS=darwin GOARCH=amd64 make release-client
-
 ```
+
 编译Windows64位客户端
+
 ```
 cd /usr/local/go/src
 GOOS=windows GOARCH=amd64 ./make.bash
@@ -112,11 +124,14 @@ GOOS=windows GOARCH=amd64 make release-client
 
 ### 服务端运行  
 1. 进入到ngrok的bin目录下  
+
 ```
 cd /usr/local/ngrok/bin
 ./ngrokd -domain="$NGROK_DOMAIN" -httpAddr=":60" -httpsAddr=":63"
 ```
+
 2. 如果出现如下提示,说明服务端开启成功
+
 ```
 [06:59:42 UTC 2018/03/24] [INFO] (ngrok/log.(*PrefixLogger).Info:83) [registry] [tun] No affinity cache specified
 [06:59:42 UTC 2018/03/24] [INFO] (ngrok/log.Info:112) Listening for public http connections on [::]:60
@@ -127,18 +142,25 @@ cd /usr/local/ngrok/bin
 
 ### 客户端运行与使用  
 mac 客户端的位置：
+
 ```
 /usr/local/ngrok/bin/darwin_amd64/ngrok
 ```
+
 windows 客户端的位置：
+
 ```
 /usr/local/ngrok/bin/windows_amd64/ngrok.exe
 ```
+
 linux 客户端的位置：
+
 ```
 /usr/local/ngrok/bin/ngrok
 ```
+
 新建ngrok.cfg文件(配置文件)
+
 ```
 server_addr: "ngrok.lestat.me:4443"
 trust_host_root_certs: false
@@ -152,16 +174,22 @@ tunnels: #可定义多个域名
    proto:
     http: 81 #映射端口，不加ip默认本机
 ```
-从命令行运行客户端文件,如下:
+
+从命令行运行客户端文件,如下:
 方法1:
+
 ```
 ./ngrok -config=ngrok.cfg -log=ngrok.log start test1
 ```
+
 方法2:(最后一个8080代表映射的本地主机端口)
+
 ```
 ./ngrok -config=ngrok.cfg -log=ngrok.log -subdomain=test1 8080
 ```
+
 如果返回相似于以下的内容,说明客户端启动成功  
+
 ```
 Tunnel Status                 online                         
 Version                       1.7/1.7                        
@@ -176,6 +204,7 @@ Avg Conn Time                 0.00ms
 假设:  
 1. ngrok监听http的端口为60
 2. nginx监听了当前服务器的80端口(域名访问hccrm.ngrok.lestat.me时会直接访问到nginx监听的80端口,因此需要nginx转发)
+
 ```
 server {
     listen       80;
@@ -196,6 +225,7 @@ server {
     }
 }
 ```
+
 重启nginx
 `service nginx reload`
 
