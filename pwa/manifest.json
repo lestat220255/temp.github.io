@@ -1,7 +1,7 @@
 {
   "name": "Lestat's Blog",
   "short_name": "Lestat's Blog",
-  "description": "About an developer who loves web",
+  "description": "敲敲代码,写写日记",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
