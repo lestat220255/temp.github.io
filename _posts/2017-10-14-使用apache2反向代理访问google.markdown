@@ -44,7 +44,7 @@ tags:
 	ProxyPass / https://www.google.com.hk/
 	ProxyPassReverse / https://www.google.com.hk/
 </VirtualHost>
-```  
+```
 
 So,[Google](https://google.smarthippo.club),[Wiki](https://wiki.smarthippo.club),就是这么简单~
 
