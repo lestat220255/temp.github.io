@@ -3,12 +3,12 @@
   "short_name": "Lestat's Blog",
   "description": "敲敲代码,写写日记",
   "icons": [{
-    "src": "icons/128.png",
-    "sizes": "128x128",
+    "src": "icons/2.png",
+    "sizes": "174x174",
     "type": "image/png"
   }, {
-    "src": "icons/512.png",
-    "sizes": "512x512",
+    "src": "icons/1.png",
+    "sizes": "554x554",
     "type": "image/png"
   }],
   "background_color": "#fff",
