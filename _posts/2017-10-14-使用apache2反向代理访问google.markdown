@@ -17,7 +17,8 @@ tags:
 ## 准备工作:
 - apache服务器需要安装proxy相关模块,如果是ubuntu环境可以直接使用命令`sudo a2enmod 模块名称`进行安装,模块可以在`/etc/apache2/mods-available/`目录下查看,安装好的模块可以在`/etc/apache2/mods-enabled/`
 里查看  
-这里直接上本人的配置:
+这里直接上配置:
+
 ```
 <VirtualHost *:443>
     ServerName facebook.smarthippo.club
@@ -43,7 +44,8 @@ tags:
 	ProxyPass / https://www.google.com.hk/
 	ProxyPassReverse / https://www.google.com.hk/
 </VirtualHost>
-```  
+```
+
 So,[Google](https://google.smarthippo.club),[Wiki](https://wiki.smarthippo.club),就是这么简单~
 
 > 备注:  
@@ -55,4 +57,5 @@ So,[Google](https://google.smarthippo.club),[Wiki](https://wiki.smarthippo.club)
 1. 在反向代理站点中如果有跳转到其他被墙站点的链接,依然无法访问
 2. 部分网站对机器访问的请求有限制,比如google,虽然首页可以正常访问,但其他页面可能会访问不了,跳转到`ipv4.google.com`进行人机验证  
 
-正在尝试用apache的负载均衡解决第二个问题...
+最后还是没能第二个问题...  
+还是用科学上网吧...
