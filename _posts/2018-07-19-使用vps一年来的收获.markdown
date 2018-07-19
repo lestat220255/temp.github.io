@@ -1,22 +1,15 @@
 ---
 layout:     post
-title:      "欢迎来我的新博客"
-subtitle:   " \"Hello World, Hello Blog\""
-date:       2018-07-05 17:29:00
+title:      "使用vps一年来的收获"
+subtitle:   "受益颇多"
+date:       2018-07-19 19:23:55
 author:     "Lestat"
 header-img: "img/grizzly.adapt.1190.1.jpg"
 catalog: true
 tags:
-    - 生活
+    - vps
 ---
 
-> "Migration Complete!"
-
-
-## 博客迁移
-
-今天把博客从hexo迁移到了jekyll,感觉文章发布上jekyll比hexo更方便,而且我喜欢这个[主题](https://github.com/Huxpro/huxpro.github.io)~
-
-[我的旧博客](https://lestatmiao.github.io/)
-
-—— Lestat 于 2018.07.05
+我的vps于2017-08-22购买于[vultr](https://www.vultr.com),当时的目的很简单:搭建一个ssserver用于科学上网，以及搭建自己的站点/博客  
+通过google(当时用的[老D](https://laod.cn/)的host),前一个目标很快就完成了,而后面那个也通过不断在网上查步骤,最后通过编译安装完成了lnmp环境搭建  
+后来每到工作之余,我都会学习
