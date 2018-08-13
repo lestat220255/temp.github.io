@@ -47,7 +47,9 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: lestat
+#disqus_username: lestat
+layout: default
+comments: true
 
 # Duoshuo settings
 #duoshuo_username: huxblog
