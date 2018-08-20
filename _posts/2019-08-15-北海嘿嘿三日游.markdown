@@ -1,0 +1,26 @@
+---
+layout:     post
+title:      "北海嘿嘿三日游"
+subtitle:   "空气好,风景不错"
+date:       2018-08-15 23:04:00
+author:     "Lestat"
+header-img: "img/20180818_bh.jpg"
+catalog: true
+tags:
+    - 游记
+---
+
+今天刚到,明天开始到处逛逛
+![螺蛳粉](https://ws1.sinaimg.cn/large/005NqLEEgy1fudugyxfgrj33402c0npf.jpg)
+
+![升平街](https://ws1.sinaimg.cn/large/005NqLEEgy1fudui1k82rj32c0340kjo.jpg)
+
+![升平街](https://ws1.sinaimg.cn/large/005NqLEEgy1fudui5mxmbj32c0340kjo.jpg)
+
+![巷子](https://ws1.sinaimg.cn/large/005NqLEEgy1fuduicj1w1j32c03401l2.jpg)
+
+![杨桃](https://ws1.sinaimg.cn/large/005NqLEEgy1fuduid9q7ej32c0340x6s.jpg)
+
+![海滩上的螃蟹](https://ws1.sinaimg.cn/large/005NqLEEgy1fudugypsm8j33401r0qv6.jpg)
+
+![兄DEI,来个正面](https://ws1.sinaimg.cn/large/005NqLEEgy1fuduhr80saj31r0340e83.jpg)
