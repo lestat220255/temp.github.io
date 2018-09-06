@@ -25,6 +25,7 @@ tags:
 ![海滩上的螃蟹](https://ws1.sinaimg.cn/large/005NqLEEgy1fudugypsm8j33401r0qv6.jpg)
 
 ![兄DEI,来个正面](https://ws1.sinaimg.cn/large/005NqLEEgy1fuduhr80saj31r0340e83.jpg)
+<<<<<<< HEAD:_posts/2019-08-15-北海嘿嘿三日游.markdown
 
 ![桂林米粉](https://ws1.sinaimg.cn/large/005NqLEEgy1fuduft8hvpj31r0340b2a.jpg)
 
@@ -37,3 +38,4 @@ tags:
 ![当地一家比较🔥的糖水店](https://ws1.sinaimg.cn/large/005NqLEEgy1fuduh87wi4j33401r01l0.jpg)
 
 ![升平街](https://ws1.sinaimg.cn/large/005NqLEEgy1fuduh9giq9j32c0340qv7.jpg)
+

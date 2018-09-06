@@ -43,3 +43,11 @@ $shared = new \PHPExcel_Shared_Date();
 $date = date('Y-m-d',$shared->ExcelToPHP($v1));//日期/时间
 ```
 
+* 坑三:phpexcel 单元格内换行的问题  
+  
+```php
+$phpexcel->getActiveSheet()->getStyle('B')->getAlignment()->setWrapText(True);
+$phpexcel->getActiveSheet()->setCellValue("B".$i, "hi my name is\n darkmuzi");
+```
+
+> 在单元格赋值之前先设置样式
