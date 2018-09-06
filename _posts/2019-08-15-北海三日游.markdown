@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "北海嘿嘿三日游"
+title:      "北海三日游"
 subtitle:   "空气好,风景不错"
 date:       2018-08-15 23:04:00
 author:     "Lestat"
