@@ -3,8 +3,8 @@ title: Lestat's Blog
 SEOTitle: Lestat's Blog
 header-img: img/home-bg.jpg
 email: lestat@lestat.me
-description: "热爱开发"
-keyword: "后端 | PHP | Linux | Docker | Vue | jenkins | scrapy | python"
+description: "I am Lestat Lee and this is my blog. I publishes stories about backend and frontend here."
+keyword: "PHP | Linux | Docker | Vue | jenkins | scrapy | python"
 url: "https://blog.lestat.me"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
