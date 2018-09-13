@@ -1,7 +1,7 @@
 {
   "name": "Lestat's Blog",
   "short_name": "Lestat's Blog",
-  "description": "敲敲代码,写写日记",
+  "description": "I am Lestat Lee and this is my blog. I publishes stories about backend and frontend here.",
   "icons": [{
 
     "src": "icons/167.png",
