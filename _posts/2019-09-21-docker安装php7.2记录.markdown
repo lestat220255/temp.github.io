@@ -33,6 +33,18 @@ docker-php-ext-enable mcrypt
 ```
 的方式安装之后也没有出现上述问题
 
+## 问题
+安装过程中提示(虽然不会影响最终结果)
+```
+WARNING: Ignoring APKINDEX.e3d33561.tar.gz: No such file or directory
+```
+
+## [解决](https://github.com/gliderlabs/docker-alpine/issues/207)
+doing apk update fixes the problem (updates the index).
+
+Request: Improve the error message.
+
+
 ## Dockerfile(php7.2)
 ```Dockerfile
 FROM daocloud.io/php:7.2-fpm-alpine
