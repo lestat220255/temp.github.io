@@ -49,7 +49,7 @@ sudo proxychains git clone https://github.com/lestat220255/docker-lnmp.git
 ```
 
 ## docker开发环境
-在安装完`docker`和`docker-compose`之后,使用我之前写的脚本,快速搭建docker+nginx+php+mysql+redis的开发环境,同时支持各种服务的多版本并存,后期开发非常方便,摆脱了集成环境的同类服务只能运行一个版本的约束
+在安装完`docker`和`docker-compose`之后,使用我之前写的[脚本](https://github.com/lestat220255/docker-lnmp),快速搭建docker+nginx+php+mysql+redis的开发环境,同时支持各种服务的多版本并存,后期开发非常方便,摆脱了集成环境的同类服务只能运行一个版本的约束
 ```
 sudo proxychains git clone https://github.com/lestat220255/docker-lnmp.git
 cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
