@@ -86,6 +86,7 @@ cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
 2. 坚果云
 3. FileZilla
 4. Wps
+5. vps网速测试`wget -qO- git.io/superbench.sh | bash`
 
 ```
 Hasta la vista
