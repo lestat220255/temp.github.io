@@ -88,6 +88,7 @@ cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
 3. FileZilla
 4. Wps
 5. vps网速测试`wget -qO- git.io/superbench.sh | bash`
+6. frp(内网穿透,可以用于开发测试,接收支付回调)
 
 ## 关闭程序崩溃报告
 * 查看当前有哪些程序的崩溃记录  
@@ -104,6 +105,30 @@ Change the enabled=1 to enabled=0. Save and close the file. You won’t see any 
 sudo apt-get install unity-tweak-tool
 sudo apt-get install notify-osd && sudo apt-get install overlay-scrollbar
 nohup unity-tweak-tool>/dev/null 2>&1 &
+```
+
+## 开发环境一键启动
+```shell
+#!/bin/zsh
+#此处使用zsh代替bash执行指令
+
+#home目录位置
+HOME=/home/username
+
+#打开ss&&启动开发环境&&打开phpstorm
+nohup $HOME/Downloads/Shadowsocks-version.AppImage>/dev/null 2>&1 &
+cd $HOME/work && sudo -S docker-compose up -d  << EOF 
+password
+EOF
+cd $HOME/PhpStorm-version/bin && nohup ./phpstorm.sh>/dev/null 2>&1 &
+
+#打开frp代理
+nohup $HOME/frp/frpc -c $HOME/frp/frpc.ini>/dev/null &
+
+#挂载windowsF盘到当前系统/mnt/windows_D
+sudo -S ntfs-3g /dev/sdb2 /mnt/windows_D << EOF 
+password
+EOF
 ```
 
 ```
