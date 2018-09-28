@@ -55,6 +55,38 @@ sudo proxychains git clone https://github.com/lestat220255/docker-lnmp.git
 cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
 ```
 
+## 工具推荐
+### terminal扩展
+1. proxychains
+2. git
+3. npm相关
+4. docker相关
+5. ntfs-3g(用于挂在windows ntfs分区的工具,如果电脑是双系统,强烈推荐)
+6. rdesktop(连接windows server)
+7. OhMyZsh
+8. tldr
+
+### 社交
+1. telegram(推荐安装一个chrome/firefox插件更方便使用)
+2. 网页版微信
+
+### 科学上网
+1. shadowsocks-qt5
+2. proxychains(terminal)
+3. SwitchyOmega(用于浏览器上根据GFWList自动切换系统代理或是直连)
+
+### 开发工具
+1. vscode(简直不能更好用...)
+2. phpstorm(2018.1.6)更新的版本无法使用之前的激活服务器
+3. pycharm(个人版,免费)
+4. postman
+
+### 其他
+1. 搜狗拼音
+2. 坚果云
+3. FileZilla
+4. Wps
+
 ```
-Good Night!
+Hasta la vista
 ```
