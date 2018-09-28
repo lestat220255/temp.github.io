@@ -65,6 +65,7 @@ cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
 6. rdesktop(连接windows server)
 7. OhMyZsh
 8. tldr
+9. htop(top加强版)
 
 ### 社交
 1. telegram(推荐安装一个chrome/firefox插件更方便使用)
@@ -98,6 +99,12 @@ cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
 Change the enabled=1 to enabled=0. Save and close the file. You won’t see any pop up for crash reports after doing this. Obvious to point out that if you want to enable the crash reports again, you just need to change the same file and put enabled as 1 again
 [参考原网址](https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/)
 
+## 安装主题管理
+```shell
+sudo apt-get install unity-tweak-tool
+sudo apt-get install notify-osd && sudo apt-get install overlay-scrollbar
+nohup unity-tweak-tool>/dev/null 2>&1 &
+```
 
 ```
 Hasta la vista
