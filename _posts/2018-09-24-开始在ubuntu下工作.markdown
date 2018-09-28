@@ -88,6 +88,17 @@ cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
 4. Wps
 5. vps网速测试`wget -qO- git.io/superbench.sh | bash`
 
+## 关闭程序崩溃报告
+* 查看当前有哪些程序的崩溃记录  
+`ls /var/crash`
+* 直接删除它们,但后续如果有类似报告依然会提示  
+`sudo rm /var/crash/*`  
+* 修改配置为0即可禁用报告(彻底解决问题)  
+`vim /etc/default/apport`  
+Change the enabled=1 to enabled=0. Save and close the file. You won’t see any pop up for crash reports after doing this. Obvious to point out that if you want to enable the crash reports again, you just need to change the same file and put enabled as 1 again
+[参考原网址](https://itsfoss.com/how-to-fix-system-program-problem-detected-ubuntu/)
+
+
 ```
 Hasta la vista
 ```
