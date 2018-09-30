@@ -106,6 +106,7 @@ sudo apt-get install unity-tweak-tool
 sudo apt-get install notify-osd && sudo apt-get install overlay-scrollbar
 nohup unity-tweak-tool>/dev/null 2>&1 &
 ```
+[一站式搞定theme,icon,dock](https://www.gnome-look.org/)
 
 ## 开发环境一键启动
 ```shell
@@ -130,6 +131,9 @@ sudo -S ntfs-3g /dev/sdb2 /mnt/windows_D << EOF
 password
 EOF
 ```
+
+## 最后再安利一个主题系列
+[draculatheme](https://draculatheme.com/)暗黑系主题,支持多种主流编辑器,以及上面安装的zsh,个人很喜欢这个风格
 
 ```
 Hasta la vista
