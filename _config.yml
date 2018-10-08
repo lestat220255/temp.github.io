@@ -68,7 +68,7 @@ disqus_username: blog-lestat-me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Let the future tell the truth, and evaluate each one according to his work and accomplishments. The present is theirs; the future, for which I have really worked, is mine."
+sidebar-about-description: "什么都略懂一点,生活更多彩一些"
 sidebar-avatar: https://lestat.b0.upaiyun.com/blog/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

@@ -10,7 +10,8 @@ layout: default
                 <div class="site-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <!--<hr class="small">-->
-                    <span class="subheading">{{ page.description }}</span>
+                    <!-- <span class="subheading">{{ page.description }}</span> -->
+                    <span id="jinrishici-sentence">正在加载....</span>
                 </div>
             </div>
         </div>
@@ -106,10 +107,9 @@ layout: default
                     {% if site.sidebar-avatar %}
                     <img src="{{site.sidebar-avatar}}" />
                     {% endif %}
-                    <!-- {% if site.sidebar-about-description %}
+                    {% if site.sidebar-about-description %}
                     <p>{{site.sidebar-about-description}}</p>
-                    {% endif %} -->
-                    <span id="jinrishici-sentence">加载中....</span>
+                    {% endif %}
                     <!-- SNS Link -->
                     <ul class="list-inline">
                         {% if site.RSS %}
