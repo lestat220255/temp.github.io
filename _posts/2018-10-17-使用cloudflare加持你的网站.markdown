@@ -52,7 +52,7 @@ tags:
 ![speed](https://ws1.sinaimg.cn/large/005NqLEEgy1fwblpq2mdbj31qq166n2p.jpg)
 
 ### 效果
-k使用curl命令查看Response Headers
+使用curl命令查看Response Headers
 ```
 curl -I blog.lestat.me
 HTTP/1.1 301 Moved Permanently
