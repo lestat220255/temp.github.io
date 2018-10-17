@@ -3,8 +3,7 @@
 
 ### 关于本人
 **85后,半路出家的程序员,热爱后端,喜欢编程,知识杂而不精,善于折腾并乐此不疲**  
-`2015-04-22`开始了人生中的第一行代码  
-`2015-12-10`开始了第一份程序员工作  
+
 🎧:[gr10e](https://www.gradolabs.com/component/k2/item/46-gr10e),[sr80e](https://www.gradolabs.com/headphones/prestige-series/item/1-sr80e)  
 喜欢的手游:[崩坏学园2](https://zh.wikipedia.org/zh-hans/%E5%B4%A9%E5%9D%8F%E5%AD%A6%E5%9B%AD2),[崩坏3rd](https://zh.wikipedia.org/zh-hans/%E5%B4%A9%E5%A3%9E3rd)    
 近期的学习和应用的技术:`持续集成`,[vue全家桶](https://github.com/vuejs/vue),`python`,`docker`  
