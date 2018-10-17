@@ -32,10 +32,12 @@ tags:
 > Off: No visitors will be able to view your site over HTTPS; they will be redirected to HTTP.  
 > Flexible SSL: You cannot configure HTTPS support on your origin, even with a certificate that is not valid for your site. Visitors will be able to access your site over HTTPS, but connections to your origin will be made over HTTP. Note: You may encounter a redirect loop with some origin configurations.  
 > Full SSL: Your origin supports HTTPS, but the certificate installed does not match your domain or is self-signed. Cloudflare will connect to your origin over HTTPS, but will not validate the certificate.  
-> Full (strict): Your origin has a valid certificate (not expired and signed by a trusted CA or Cloudflare Origin CA) installed. Cloudflare will connect over HTTPS and verify the cert on each request.
+> Full (strict): Your origin has a valid certificate (not expired and signed by a trusted CA or Cloudflare Origin CA) installed. Cloudflare will connect over HTTPS and verify the cert on each request.  
+
 * Flexible SSL：
 部分SSL加密连接，你不必拥有SSL证书。直接使用Cloudflare免费SSL。用户连接到Cloudflare是采用加密连接，从Cloudflare到主机则不走加密连接。
-> 此项可能会因为主机配置冲突导致[反复重定向](https://support.cloudflare.com/hc/en-us/articles/115000219871)
+> 此选项可能会因为主机配置冲突导致[反复重定向](https://support.cloudflare.com/hc/en-us/articles/115000219871)  
+
 * Full SSL：
 全程SSL加密连接，你必须拥有一个SSL证书在你的主机上，不过Cloudflare并不会检查你的SSL证书是自己签署或第三方公正单位发下來的。
 * Full SSL(Strict)：
