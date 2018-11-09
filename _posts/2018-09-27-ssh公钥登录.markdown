@@ -40,6 +40,7 @@ The key's randomart image is:
 |      .    oB=.  |
 +----[SHA256]-----+
 ```
+建议在`passphrase`处设置密码,防止key被盗用!!!  
 以上提示说明生成成功  
 接下来加入到`authorized_keys`  
 ```shell
